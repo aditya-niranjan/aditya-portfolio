@@ -1,0 +1,373 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth; 
+
+
+
+}
+
+
+#main{
+  width: 100%;
+  height: 100vh;
+
+  
+
+}
+#back{
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: rgb(254, 9, 9); */
+
+}
+#back img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  
+}
+
+#top{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+}
+
+#workingarea{
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+  position: relative;
+  
+}
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+
+}
+#nav img{
+  width: 85px;
+  height:81px;
+
+}
+
+#nleft, #nright{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+}
+
+#nav a{
+  pointer-events: all;
+  text-decoration: none;
+  text-transform:uppercase ;
+  color: white;
+  font-family: "gilory";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#hero{
+  position:absolute;
+  top: 58%;
+  left: 0;
+  transform: translate(-0%,-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: red; */
+
+}
+#heroleft{
+  min-width: 50%;
+}
+#heroleft .elem{
+  position: relative;
+  height: 16vh;
+  overflow: hidden;
+  
+}
+
+#heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+
+#heroleft .elem h1{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: .8;
+  font-family: "senserf";
+  color: white;
+  font-weight: 600;
+  font-size: 6vw;
+}
+#heroleft button{
+  pointer-events: all;
+  padding: .8vw 2vw;
+  font-size: 2vw;
+  margin-top: 1.5vw;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#heroright{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25%;
+  color: white;
+  /* background-color: green; */
+  /* border: 20px solid rgba(252, 0, 0, 0.621);
+  border-radius: 20px; */
+}
+#heroright p{
+  font-size: 15px;
+  font-weight: 200;
+  text-align: right;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#heroright #imagediv{
+  width: 100%;
+  height: 170px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-image: url(https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  border-radius: 35px;
+  border: 3px solid black;
+}
+#heroright p:nth-child(3){
+  margin-bottom:75px;
+}
+#heroright p:nth-child(1){
+  font-size: 30px;
+}
+
+/* --------------------------------------next page1 starts css --------------------------- */
+
+#skills .skill-1{
+  width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+
+}
+.skill-1 h1{
+  margin-top: 0%;
+  padding-left: 45%;
+  font-size: 65px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 30px;
+  font-variant: small-caps;
+  color: rgb(224, 140, 15);
+  text-shadow: 11px 6px 21px rgba(0,0,0,0.5);
+  position: relative;
+
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 88px auto;
+  padding: 20px;
+  background-color: #ffffffd3;
+  box-shadow: 11px 2px 108px -29px rgba(0,0,0,0.62);
+  -webkit-box-shadow: 11px 2px 108px -29px rgba(0,0,0,0.62);
+  -moz-box-shadow: 11px 2px 108px -29px rgba(0,0,0,0.62);
+  border-radius: 30px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #0e0a0a;
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #c4adad;
+}
+
+.skill-name {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.skill-level {
+  font-weight: bold;
+}
+
+
+/* <-----------------------------------projects ---------------------------------- */
+
+#projets{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+
+}
+
+.project-header h2{
+  margin-top: 30px;
+  padding-top: 29px;
+  padding-left: 42.5%;
+  font-size: 62px;
+}
+
+
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 12%;
+
+}
+
+.projects-container a{
+  list-style: none;
+  text-decoration: none;
+}
+
+.project {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  background-color: #130707;
+  border-radius: 20px;
+  box-shadow: 1px 2px 142px -12px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 1px 2px 142px -12px rgba(0,0,0,0.45);
+  -moz-box-shadow: 1px 2px 142px -12px rgba(0,0,0,0.45);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 30px;
+  font-variant: small-caps;
+  color: rgb(224, 140, 15);
+  text-shadow: 11px 6px 21px rgba(0,0,0,0.5);
+
+}
+
+.project p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.project-content h2{
+  padding-left: 88px;
+  padding-top: 70px;
+}
+
+.project-content p{
+  padding-left: 40px;
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+
+.project {
+  /* ... other styles ... */
+  position: relative;
+  overflow: hidden;
+}
+
+.project:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(19, 35, 17), rgb(255, 102, 102));
+  mix-blend-mode: difference;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 20px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.project:hover:before {
+  opacity: 1;
+}
+
+/* ----------------------projects h1 css  */
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:1;
+}
+.console-container {
+  padding-right: 13%;
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height: 150px;
+  width:90px;
+  display:block;
+  position:relative;
+  color:rgb(11, 3, 3);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  padding-top: 45px;
+}
+.console-underscore {
+   display:inline-block;
+  position:absolute;
+  top:36px;
+  left:8px;
+  color: blue;
+}
+
+/* ------------------------------footer styles------------------------- */
+
+/* Footer Style */
+footer {
+  height: 51px;
+  position: relative;
+  margin-top: 0.2%;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  border-radius: 1px solid white;
+  background-color: #0e0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: black
+}
