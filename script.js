@@ -159,4 +159,12 @@ gsap.to(h1s[index],{
 
   // -------------------------------------here is locomotive--------------------------
 
- 
+  // var myButton = document.getElementById('.ri-menu-2-line');
+  // var myElement = document.getElementById('#nav a');
+  
+  // function handleButtonClick() {
+  //   // Toggle the opacity between 0.5 and 1
+  //   "#nav a".style.opacity = ("#nav a".style.display === 'block') ? '0.5' : '1';
+  // }
+  
+  // ri-menu-2-line.addEventListener('click', handleButtonClick);
